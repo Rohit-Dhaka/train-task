@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.train-box {
+    width: 500px;
+    height: 150px;
+    border-radius: 10% 10% 0 0;
+    background-color: green;
+}
+
+.train-passenger {
+    height: 40px;
+    width: 40px;
+    border-radius: 5%;
+    overflow: hidden;
+    background-color: white;
+}
+
+.train-door {
+    height: 100px;
+    width: 40px;
+    background-color: white;
+    position: absolute;
+    bottom: 1%;
+
+}
+
+.first-door {
+    left: 14%;
+}
+
+.second-door {
+    right: 14%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.gap-5 {
+    gap: 5px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.relative {
+    position: relative;
+}
+
+.train-lock {
+    width: 30px;
+    height: 10px;
+    background-color: green;
+    position: absolute;
+    right: -15px;
+    bottom: 10%;
+
+}
+
+.train-wheels {
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    background-color: green;
+
+    border-radius: 50%;
+    position: absolute;
+    bottom: -25px;
+}
+
+.first-wheels {
+    left: 4%;
+}
+
+.second-wheels {
+    right: 4%;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.h-screen {
+    min-height: 100vh;
+}
+
+
+.train-line {
+    width: 100%;
+    height: 10px;
+    background-color: green;
+    position: absolute;
+    bottom: -30px;
+}
+
+.smoke-box {
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    top: -30px;
+    right: 10%;
+    border-radius: 20% 20% 0 0;
+    background-color: green;
+
+}
+
+.smoke-gray {
+    box-shadow: 0px -20px 10px 0px rgba(0, 0, 0, 0.46);
+    height: 20px;
+    width: 100%;
+    animation: smoke 5s linear infinite;
+}
+
+@keyframes smoke {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+
+    }
+
+    50% {
+        opacity: 50%;
+
+    }
+
+    100% {
+        opacity: 100%;
+
+    }
+}
+.bg-img-1 {
+    background-image: url("../images/png/img1.jpg");
+    background-position: bottom;
+    background-size: contain;
+    background-size: cover;
+}
+.bg-img-2 {
+    background-image: url("../images/png/img2.png");
+    background-position: bottom;
+    background-size: cover;
+}
+.bg-img-3 {
+    background-image: url("../images/png/img3.jpg");
+    background-position: bottom;
+    background-size: cover;
+}
+
+.bg-img-4 {
+    background-image: url("../images/png/img4.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-img-5 {
+    background-image: url("../images/png/img5.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-img-6 {
+    background-image: url("../images/png/img6.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.train-container {
+    animation: movetrain 10s ease-out infinite;
+}
+
+@keyframes movetrain {
+    0% {
+        transform: translatex(-1000px);
+    }
+}
